@@ -1,0 +1,291 @@
+.images {
+   display: flex;
+   flex-direction: column;
+   max-width: 800px;
+   margin: 0 auto;
+   position: relative;
+   padding: 0 87px;
+}
+
+.container {
+   max-width: 960px;
+   margin: 0 auto;
+}
+
+.images_title {
+   font-size: 32px;
+   color: #424242;
+}
+
+.imageStar {
+   position: absolute;
+   width: 30px;
+   top: 5px;
+   left: 5px;
+}
+
+
+@media (min-width: 425px) {
+   .images_catalog {
+      display: flex;
+      flex-direction: column;
+   }
+
+   .images_catalogLast {
+      flex-direction: row;
+      display: flex;
+   }
+}
+@media (min-width: 768px) {
+   .images_catalog {
+      flex-direction: row;
+   }
+
+   .images_catalogLast {
+      flex-direction: row;
+   }
+}
+
+@media (min-width: 320px) {
+   .big_image {
+      height: 240px;
+      width: 100%;
+      margin-bottom: 25px;
+      position: relative;
+   }
+}
+
+@media (min-width: 425px) {
+   .big_image {
+      height: unset;
+   }
+}
+
+@media (min-width: 768px) {
+   .big_image {
+      height: 520px;
+      width: 520px;
+      margin-right: 25px;
+      margin-bottom: 0;
+   }
+}
+
+
+.big_image img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+@media (min-width: 320px) {
+   .small_images {
+      display: flex;
+      flex-direction: column;
+      flex: 0 1 100%;
+   }
+
+   .left-arrow {
+      display: none;
+   }
+
+   .right-arrow {
+      display: none;
+   }
+
+   .small_image {
+      width: 100%;
+      height: 240px;
+      position: relative;
+   }
+
+   .small_image:first-child {
+      margin-bottom: 25px;
+   }
+}
+
+@media (min-width: 425px) {
+   .small_images {
+      flex-direction: row;
+      flex: 0 1 47%;
+   }
+
+   .small_image:first-child {
+      margin-right: 25px;
+      margin-bottom: 0;
+   }
+
+   .small_image {
+      flex: 0 1 50%;
+   }
+}
+
+@media (min-width: 768px) {
+   .small_images {
+      flex-direction: column;
+      flex: 0 1 32%;
+   }
+
+   .left-arrow {
+      display: block;
+      position: absolute;
+      left: 0px;
+      top: 280px;
+      cursor: pointer;
+      height: 120px;
+      width: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+
+   .left-arrow:hover {
+      background-color: #e3e3e3;
+   }
+
+   .left-arrow img {
+      width: 30px;
+      height: 30px;
+   }
+
+   .right-arrow {
+      display: block;
+      position: absolute;
+      right: -5px;
+      top: 280px;
+      height: 120px;
+      width: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+   }
+
+   .right-arrow:hover {
+      background-color: #e3e3e3;
+   }
+
+   .right-arrow img {
+      width: 30px;
+      height: 30px;
+      opacity: 0.5;
+   }
+
+   .small_image:first-child {
+      margin-bottom: 25px;
+      margin-right: 0;
+   }
+}
+
+
+.small_image img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.last_images {
+   display: flex;
+   flex-direction: column;
+   max-width: 800px;
+   margin: 200px auto;
+   padding: 0 15px;
+}
+
+.descrip {
+   display: flex;
+   flex-direction: column;
+   margin-top: 15px;
+}
+
+.text_desc {
+   font-size: 14px;
+   color: #212121;
+   max-width: 232px;
+}
+
+.hashtags {
+   font-size: 12px;
+   color: #424242;
+   margin-top: 5px;
+}
+
+@media (min-width: 320px) {
+   .smallimages2 {
+      margin-top: 25px;
+   }
+
+   .small_imageLast {
+      width: 100%;
+      height: 240px;
+      position: relative;
+   }
+
+   .small_imageLastWrap {
+      margin-bottom: 25px;
+   }
+
+   .banner {
+      display: none;
+   }
+}
+
+.description {
+   position: absolute;
+   display: flex;
+   flex-direction: column;
+   bottom: 0;
+   left: 0;
+   padding: 25px;
+   width: calc(100% - 50px);
+   background: linear-gradient(0deg,#000 0,rgba(0,0,0,0) 100%);
+}
+
+@media (min-width: 425px) {
+   .smallimages2 {
+      display: flex;
+   }
+
+   .small_imageLastWrap {
+      flex: 0 1 50%;
+   }
+
+   .small_imageLastWrap:first-child {
+      margin-right: 25px;
+   }
+}
+
+@media (min-width: 768px) {
+   .banner {
+      min-height: 400px;
+      flex: 0 1 34%;
+      display: block;
+   }
+
+   .smallimages2 {
+      display: none;
+   }
+
+   .small_imageLastWrap {
+      flex: 0 1 30%;
+      margin-right: 25px;
+   }
+}
+
+.banner img {
+   object-fit: cover;
+   width: 100%;
+   height: 100%;
+}
+
+
+@media (min-width: 425px) {
+   .small_imageLast {
+      height: 240px;
+   }
+}
+
+.small_imageLast img {
+   object-fit: cover;
+   width: 100%;
+   height: 100%;
+}
