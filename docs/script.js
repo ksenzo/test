@@ -14,16 +14,16 @@ const getData = () => {
             `<div class="container all div">
                <div class="images all div">
                <div class="left-arrow all div">
-                  <img class="all img" src="../in/icons/back.svg" alt="Back" />
+                  <img class="all img" src="in/icons/back.svg" alt="Back" />
                </div>
                <div class="right-arrow all div">
-                  <img class="all img" src="../in/icons/next.svg" alt="next" />
+                  <img class="all img" src="in/icons/next.svg" alt="next" />
                </div>
                   <h1 class="images_title all h1">FEATURED IMAGES</h1>
                   <div class="images_catalog all div">
                      <div class="big_image all div">
                         <img class="all img" src="in/${data[0].image}" alt="image">
-                        <div class="imageStar div all"><img class="all img" src="../in/icons/star-solid.svg" alt="star-regular" /></div>
+                        <div class="imageStar div all"><img class="all img" src="in/icons/star-solid.svg" alt="star-regular" /></div>
                         <div class="description div all">
                            <span class="text_desc span all" max-width="230px" style="color: #fff">${data[0].title}</span>
                            <span class="hashtags span all" style="color: #fff">#${data[0].tags[0]} #${data[0].tags[1]} #${data[0].tags[2]}</span>
@@ -39,7 +39,7 @@ const getData = () => {
                         </div>
                         <div class="small_image all div">
                            <img class="all img" src="in/${data[2].image}" alt="image">
-                           <div class="imageStar div all"><img class="all img" src="../in/icons/star-solid.svg" alt="star-regular" /></div>
+                           <div class="imageStar div all"><img class="all img" src="in/icons/star-solid.svg" alt="star-regular" /></div>
                            <div class="description div all">
                               <span class="text_desc span all" max-width="230px" style="color: #fff">${data[2].title}</span>
                               <span class="hashtags span all" style="color: #fff">#${data[2].tags[0]} #${data[2].tags[1]}</span>
@@ -82,7 +82,7 @@ const getData = () => {
                   <div class="small_imageLastWrap div all" style="display: flex; flex-direction: column;">
                      <div class="small_imageLast div all">
                         <img class="all img" src="in/${data[7].image}" alt="image">
-                        <div class="imageStar div all"><img class="all img" src="../in/icons/star-regular.svg" alt="star-regular" /></div>
+                        <div class="imageStar div all"><img class="all img" src="in/icons/star-regular.svg" alt="star-regular" /></div>
                      </div>
 
                      <span class="descrip span all">
