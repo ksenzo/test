@@ -35,15 +35,6 @@
    .images_catalogLast {
       flex-direction: row;
    }
-   
-   .images {
-      display: flex;
-      flex-direction: column;
-      max-width: 800px;
-      margin: 0 auto;
-      position: relative;
-      padding: 0 87px;
-   }
 }
 
 @media (min-width: 320px) {
@@ -76,6 +67,15 @@
       width: 520px;
       margin-right: 25px;
       margin-bottom: 0;
+   }
+   
+   .images {
+      display: flex;
+      flex-direction: column;
+      max-width: 800px;
+      margin: 0 auto;
+      position: relative;
+      padding: 0 87px;
    }
 }
 
